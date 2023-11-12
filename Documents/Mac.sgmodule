@@ -1,0 +1,50 @@
+#!name=Mac
+#!desc=Mac
+
+[General]
+
+[Rule]
+PROCESS-NAME,/Applications/SoundSource.app/Contents/MacOS/SoundSource,REJECT
+DOMAIN-SUFFIX,rogueamoeba.net,REJECT
+
+# > Download
+PROCESS-NAME,aria2c,国内策略
+PROCESS-NAME,fdm,国内策略
+PROCESS-NAME,Folx,国内策略
+PROCESS-NAME,NetTransport,国内策略
+PROCESS-NAME,Thunder,国内策略
+PROCESS-NAME,Transmission,国内策略
+PROCESS-NAME,uTorrent,国内策略
+PROCESS-NAME,WebTorrent,国内策略
+PROCESS-NAME,WebTorrent Helper,国内策略
+DOMAIN-SUFFIX,argotunnel.com,全球加速
+
+#国内策略
+PROCESS-NAME,/Applications/WeGame.app/Contents/Resources/CloudPlugin/Start4WeGame.app/Contents/PlugIns/STGamePlugin.stp/Contents/Resources/STGame.app/Contents/MacOS/STGame,国内策略
+PROCESS-NAME,/Applications/WeGame.app/Contents/Resources/CloudPlugin/Start4WeGame.app/Contents/MacOS/Start4WeGame,国内策略
+PROCESS-NAME,/Applications/WeGame.app/Contents/Resources/wegamemac,国内策略
+PROCESS-NAME,/Applications/WeGame.app/Contents/Frameworks/WeGame Helper.app/Contents/MacOS/WeGame Helper,国内策略
+PROCESS-NAME,/Applications/WeGame.app/Contents/MacOS/WeGame,国内策略
+PROCESS-NAME,/Applications/海星云.app/Contents/MacOS/StarVictoryClient,国内策略
+PROCESS-NAME,/Applications/BaiduNetdisk_mac.app/Contents/MacOS/BaiduNetdisk_mac,国内策略
+PROCESS-NAME,/Applications/BaiduNetdisk_mac.app/Contents/Frameworks/BaiduNetdisk_mac Helper.app/Contents/MacOS/BaiduNetdisk_mac Helper,国内策略
+PROCESS-NAME,/Applications/WeChat.app/Contents/MacOS/WeChat,国内策略
+PROCESS-NAME,/Applications/TeamViewer.app/Contents/MacOS/TeamViewer,国内策略
+PROCESS-NAME,/Applications/SunloginClient.app/Contents/MacOS/SunloginClient,国内策略
+PROCESS-NAME,/Applications/NextSSH.app/Contents/MacOS/NextSSH,国内策略
+
+DOMAIN-SUFFIX,stun6.chat.bilibili.com,拦截
+
+[Ponte]
+
+[Proxy Group]
+
+[Replica]
+
+[SSID Setting]
+
+[Script]
+
+[URL Rewrite]
+
+[MITM]

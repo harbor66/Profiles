@@ -1,0 +1,15 @@
+#!name=RetouchPicsVipCrack
+#!desc=🔗 [2023/9/6 10:08:02] RetouchPicsVipCrack
+
+# 🔗 模块链接
+#SUBSCRIBED https://script.hub/file/_start_/https://raw.githubusercontent.com/yqc007/QuantumultX/master/RetouchPicsVipCrack.js/_end_/RetouchPicsVipCrack.sgmodule?type=qx-rewrite&target=surge-module
+
+
+[Script]
+
+# > 醒图解锁会员
+RetouchPicsVipCrack_11 = type=http-request, pattern=^https?:\/\/commerce-api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info, script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/RetouchPicsVipCrack.js, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% commerce-api.faceu.mobi,api3-misc-lf.retouchpics.com

@@ -1,0 +1,20 @@
+#!name=gg
+#!desc=🔗 [2023/9/6 10:17:34] gg
+
+# 🔗 模块链接
+#SUBSCRIBED http://script.hub/file/_start_/http://git.yycm.link/chxm1023/Rewrite/raw/main/gg.js/_end_/goodnotes6.sgmodule?type=qx-rewrite&target=surge-module
+
+[Rule]
+DOMAIN-SUFFIX,goodnotes.email,美国节点
+DOMAIN-SUFFIX,goodnotescloud.com,美国节点
+DOMAIN-SUFFIX,goodnotes.com,美国节点
+
+[Script]
+
+gg_6 = type=http-response, pattern=^https:\/\/isi\..*\.g.*\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), requires-body=true, max-size=3145728, script-path=http://git.yycm.link/chxm1023/Rewrite/raw/main/gg.js, timeout=60, script-update-interval=0
+
+gg_7 = type=http-request, pattern=^https:\/\/isi\..*\.g.*\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=http://git.yycm.link/chxm1023/Rewrite/raw/main/gg.js, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% isi.*.g*.com
