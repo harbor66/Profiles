@@ -1,0 +1,19 @@
+#!name=OraySunLogin
+#!desc=向日葵去广告
+
+[Script]
+
+# > 开屏广告
+URL-REGEX,^https:\/\/client-api-v2\.oray\.com\/materials\/SLCC_IOS_STARTUP,REJECT
+
+# > 首页文字广告
+URL-REGEX,^https:\/\/client-api-v2\.oray\.com\/materials\/SLCC_IOS_DEVICE,REJECT
+
+# > 发现页广告
+URL-REGEX,^https:\/\/client-api-v2\.oray\.com\/materials\/SUNLOGIN_CLIENT_IOS_PROMOTION,REJECT
+
+
+
+[MITM]
+
+hostname = %APPEND% client-api-v2.oray.com
