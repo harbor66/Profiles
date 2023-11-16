@@ -1,2 +1,2 @@
 # Profiles
-test
+test gpg
