@@ -9,4 +9,4 @@ DOMAIN,upos-sz-staticcos.bilivideo.com,REJECT
 (?=.*(hdslb\.com.*(\.zip|\.mp4)))^((?!(hdslb\.com\/bfs\/app-static\/)).)*$ - reject
 
 [MITM]
-#hostname = %APPEND% upos-sz-staticcos.bilivideo.com
+hostname = %APPEND% *.bilivideo.com, *.hdslb.com

@@ -1,0 +1,11 @@
+#!name=xhsX
+#!desc=小红书精简占用
+
+[Rule]
+DOMAIN,fe-static.xhscdn.com,REJECT
+
+[URL Rewrite]
+(?=xhscdn.*\.(otf|OTF|ttf|TTF|zip)) - reject
+
+[MITM]
+hostname = %APPEND% *.xhscdn.com
