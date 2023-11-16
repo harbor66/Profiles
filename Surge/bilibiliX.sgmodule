@@ -1,0 +1,12 @@
+#!name=bilibiliX
+#!desc=b站精简占用
+
+[Rule]
+DOMAIN,upos-sz-staticcos.bilivideo.com,REJECT
+
+[URL Rewrite]
+(?=resource\?resourceUrl|upos\-sz\-staticcos) - reject
+(?=.*(hdslb\.com.*(\.zip|\.mp4)))^((?!(hdslb\.com\/bfs\/app-static\/)).)*$ - reject
+
+[MITM]
+#hostname = %APPEND% upos-sz-staticcos.bilivideo.com
