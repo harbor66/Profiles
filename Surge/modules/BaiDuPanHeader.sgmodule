@@ -1,8 +1,8 @@
 #!name=BaiDuPanHeader
 #!desc=百度网盘网页下载
 
-[URL Rewrite]
-baidupcs\.com\\file header-replace User-Agent "pan.baidu.com"
+[Header Rewrite]
+.baidupcs\.com\/file header-replace User-Agent pan.baidu.com
 
 [MITM]
 hostname = %APPEND% *.baidupcs.com
