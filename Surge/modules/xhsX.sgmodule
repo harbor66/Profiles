@@ -1,5 +1,6 @@
 #!name=xhsX
 #!desc=小红书精简占用
+#!category=去广告
 
 [Rule]
 DOMAIN,fe-static.xhscdn.com,REJECT
